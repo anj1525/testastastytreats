@@ -1,0 +1,41 @@
+/* In style.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F1E4EF;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.2rem;
+    color: #292E3D;
+}
+
+.brand-logo-name {
+    margin-left: 1rem;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Align items vertically */
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-right: 1rem;
+}
+
+.main-nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.main-nav a:hover {
+    color: #5A6587;
+}
