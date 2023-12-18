@@ -1,11 +1,34 @@
-.home-page-image {
-    width: 100%;
+.home-page-image0 {
+    width: 30vw;
     height: calc(100vh - 100px); /* Adjust for header height or other fixed elements */
     display: block;
     position: fixed;
     top: 370px; /*will move the image up or down!!! */
-    left: 0;
+    left: 100px;
     z-index: -1; /* Behind other elements */
+    padding: 20px;
+}
+
+.home-page-image1 {
+    width: 30vw;
+    height: calc(100vh - 100px); /* Adjust for header height or other fixed elements */
+    display: block;
+    position: fixed;
+    top: 370px; /*will move the image up or down!!! */
+    left: 10;
+    z-index: -1; /* Behind other elements */
+    padding: 20px;
+}
+
+.home-page-image2 {
+    width: 30vw;
+    height: calc(100vh - 100px); /* Adjust for header height or other fixed elements */
+    display: block;
+    position: fixed;
+    top: 370px; /*will move the image up or down!!! */
+    right: 100px;
+    z-index: -1; /* Behind other elements */
+    padding: 20px;
 }
 
 .home-page-whisk-image {
