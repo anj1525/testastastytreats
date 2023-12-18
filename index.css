@@ -9,11 +9,21 @@
 }
 
 .home-page-whisk-image {
-    width: 20vw; 
-    height: 20vh;
+    width: 5vw; 
+    height: 13vh;
     display: block;
     position: fixed;
-    bottom: 520px; /*will move the image up or down!!! */
-    left: -15;
+    bottom: 560px; /*will move the image up or down!!! */
+    right: 770px;
+    z-index: -1; /* Behind other elements */
+}
+
+.home-page-mitt-image {
+    width: 5vw; 
+    height: 13vh;
+    display: block;
+    position: fixed;
+    bottom: 560px; /*will move the image up or down!!! */
+    left: 770px;
     z-index: -1; /* Behind other elements */
 }
