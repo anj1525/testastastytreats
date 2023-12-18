@@ -14,7 +14,7 @@
 }
 
 .home-main-section .home-page-image{
-    background-image: url(images/IMG-20231217-WA0010.jpg);
+    background-image: url(../images/IMG-20231217-WA0010.jpg);
     flex-grow: 1;
     max-height: 70vh;
     min-width: 30vw;
