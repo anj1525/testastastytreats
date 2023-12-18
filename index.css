@@ -1,24 +1,9 @@
-.home-main-section {
-    display: flex;
-    align-items:stretch;
-    justify-content: space-between;
-    flex-grow: 1;
-}
-
-.home-main-section .img-wrapper {
-    flex-grow: 1;
-    flex-direction: column;
-    display: flex;
-    align-items: stretch;
-    justify-content: flex-end;
-}
-
-.home-main-section .home-page-image{
-    background-image: url(../images/IMG-20231217-WA0010.jpg);
-    flex-grow: 1;
-    max-height: 70vh;
-    min-width: 30vw;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom left;
+/* Style the image directly */
+.home-page-image {
+    max-height: 80vh;
+    width: 30vw; /* Allow the image to scale proportionally */
+    display: block; /* Ensures the image doesn't have default inline-block space */
+    margin-right: 2vw; /* Add margin to separate the image from other content */
+    float: left; /* Float the image to the left */
+    object-fit: cover; /* Crop the image to cover the container */
 }
