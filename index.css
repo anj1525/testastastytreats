@@ -1,9 +1,15 @@
 /* Style the image directly */
 .home-page-image {
-    max-height: 80vh;
-    width: 30vw; /* Allow the image to scale proportionally */
-    display: block; /* Ensures the image doesn't have default inline-block space */
-    margin-right: 2vw; /* Add margin to separate the image from other content */
-    float: left; /* Float the image to the left */
-    object-fit: cover; /* Crop the image to cover the container */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw; /* Stretch the image horizontally */
+    height: 70vh; /* Allow the image to scale proportionally */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Style the content to prevent overlapping with the image */
+.content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the image */
 }
