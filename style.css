@@ -1,5 +1,6 @@
 /* In style.css */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -54,6 +55,18 @@ body {
 }
 
 .contact-button:hover {
+    background-color: #5A6587;
+    color: white;
+}
+.Menu-button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #5A6587;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.Menu-button:hover {
     background-color: #5A6587;
     color: white;
 }
