@@ -1,15 +1,19 @@
-/* Style the image directly */
 .home-page-image {
-    position: absolute;
-    bottom: 0;
+    width: 100%;
+    height: calc(100vh - 100px); /* Adjust for header height or other fixed elements */
+    display: block;
+    position: fixed;
+    top: 370px; /*will move the image up or down!!! */
     left: 0;
-    width: 100vw; /* Stretch the image horizontally */
-    height: 70vh; /* Allow the image to scale proportionally */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    z-index: -1; /* Behind other elements */
 }
 
-/* Style the content to prevent overlapping with the image */
-.content {
-    position: relative;
-    z-index: 1; /* Ensure content is above the image */
+.home-page-whisk-image {
+    width: 20vw; 
+    height: 20vh;
+    display: block;
+    position: fixed;
+    bottom: 520px; /*will move the image up or down!!! */
+    left: -15;
+    z-index: -1; /* Behind other elements */
 }

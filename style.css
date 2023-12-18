@@ -91,21 +91,33 @@ body {
 .title {
     font-weight: 500;
     font-size: 3em;
-    margin-bottom: 1rem;
-    margin-top: 0;
+    position: fixed;
+    top: 150px; /* Adjust as needed */
+    left: 50%; /* Align horizontally */
+    transform: translateX(-50%);
+    margin-bottom: 40px;
 }
 
 .subtitle {
     font-weight: 500;
     font-size: 1.2em;
-    margin-bottom: 2rem;
+    position: fixed;
+    top: 240px; /* Adjust as needed */
+    left: 50%; /* Align horizontally */
+    transform: translateX(-50%);
+    margin-bottom: 40px;
 }
 
 .btn {
+    display: block;
     color: white;
     background-color: #624162;
     padding: .75rem 1.5rem;
     border-radius: .5rem;
     text-decoration: none;
     font-size: .9rem;
+    margin-top: -210px; /* moves it up or down */
+    margin-bottom: 100px; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
 }
