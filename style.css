@@ -113,17 +113,3 @@ body {
     transform: translateX(-50%);
     margin-bottom: 40px;
 }
-
-.btn {
-    display: block;
-    color: white;
-    background-color: #624162;
-    padding: .75rem 1.5rem;
-    border-radius: .5rem;
-    text-decoration: none;
-    font-size: .9rem;
-    margin-top: -210px; /* moves it up or down */
-    margin-bottom: 100px; /* Adjust as needed */
-    margin-left: auto;
-    margin-right: auto;
-}

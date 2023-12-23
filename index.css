@@ -33,11 +33,11 @@
 
 .home-page-whisk-image {
     width: 5vw; 
-    height: 13vh;
+    height: 16vh;
     display: block;
     position: fixed;
-    bottom: 560px; /*will move the image up or down!!! */
-    right: 770px;
+    bottom: 540px; /*will move the image up or down!!! */
+    right: 800px;
     z-index: -1; /* Behind other elements */
 }
 

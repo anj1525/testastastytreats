@@ -7,31 +7,6 @@
     <link href="style.css" rel="stylesheet">
     <link href="contactus.css" rel="stylesheet">
     <title>Testa's Tasty Treats</title>
-    <style>
-        /* Add the CSS styles here if you don't have a separate CSS file */
-        body {
-            font-family: Arial, sans-serif; /* Change the font if needed */
-            margin: 0;
-            padding: 0;
-        }
-        .contact-main-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start; /* Align items to the top */
-            max-width: 900px; /* Adjust the max-width according to your layout */
-            margin: 0 auto; /* Center the content horizontally */
-            padding: 20px;
-        }
-        .contact-info {
-            flex: 1;
-            padding-right: 20px; /* Create space between the sections */
-        }
-        .contact-form {
-            flex: 1;
-            padding-left: 20px; /* Create space between the sections */
-        }
-        /* Rest of your contact form styles remain the same */
-    </style>
 </head>
 <body class="container">
     <header class="main-header"> <!-- Added the main-header class here -->
@@ -42,7 +17,6 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contactus.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="Cookies.html">Cookies</a></li>
                 <li><a href="Cakes.html">Cakes</a></li>
                 <li><a href="Pastries.html">Pastries</a></li>
@@ -52,30 +26,35 @@
             </ul>
         </nav>
     </header>
-    <section class="contact-main-section">
-        <div class="contact-info">
-            <h1 class="title">Testa's Tasty Treats</h1>
-            <span class="subtitle">Gluten free bakery</span>
-            <p>Please text 647-632-2808 or email testastastytreats23@outlook.com.</p>
-            <!-- Add your other contact information paragraphs here -->
+    <section class="home-main-section">
+        <div>
+          <h1 class = "title">Testa's Tasty Treats</h1>
         </div>
-        <div class="contact-form">
-            <form action="mailto:anjanisharm@outlook.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <input type="submit" value="Send">
+        <div class="text">
+            <p>Reach me by text at 647-632-2808 or email at</p>
+            <p>testastastytreats23@outlook.com</p>
+            <p>Please allow 7-14 days in advance of when order is required.</p>
+            <p>State your name and contact number with what you wish to order</p>
+            <p>All custom cakes will be basic design (names are allowed)</p>
+            <p>Any special flavour request is welcomed!</p>
+        </div>
+        <div class="form">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Message.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
             </form>
-        </div>
+          </div>
+        
     </section>
 </body>
 </html>
