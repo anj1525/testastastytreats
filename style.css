@@ -86,29 +86,31 @@ body {
 
 /* Main Section Styles */
 .home-main-section {
-    position: relative; /* Ensure the container has a relative position */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh - 100px); /* Adjust for header height */
+    height: calc(100vh - 100px + 3em); /* Adjust for header height and title's font size */
     text-align: center;
 }
 
-.title .subtitle {
+.title {
     font-weight: 500;
-    font-size: 7em;
-    position: fixed;
-    left: 50%;  
+    font-size: 3em;
+    position: absolute;  
+    top: 60px; /* Adjust as needed */
+    left: 50%; /* Align horizontally */
     transform: translateX(-50%);
     margin-bottom: 40px;
 }
 
-.title {
-    top: 150px;  
-}
-
 .subtitle {
-    top: 240px; 
+    font-weight: 500;
+    font-size: 1.2em;
+    position: absolute;
+    top: 150px; /* Adjust as needed */
+    left: 50%; /* Align horizontally */
+    transform: translateX(-50%);
+    margin-bottom: 40px;
 }
-
