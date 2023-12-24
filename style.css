@@ -91,7 +91,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh - 100px + 3em); /* Adjust for header height and title's font size */
+    height: auto;
     text-align: center;
 }
 
