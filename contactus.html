@@ -9,7 +9,7 @@
     <title>Testa's Tasty Treats</title>
 </head>
 <body class="container">
-    <header class="main-header"> <!-- Added the main-header class here -->
+    <header class="main-header">
         <a href="/" class="brand-logo">
             <img src="images/logo.png" alt="Logo" class="logo-image">
         </a>
@@ -28,7 +28,7 @@
     </header>
     <section class="home-main-section">
         <div>
-          <h1 class = "title">Testa's Tasty Treats</h1>
+            <h1 class="title">Testa's Tasty Treats</h1>
         </div>
         <div class="text">
             <p>Reach me by text at 647-632-2808 or email at</p>
@@ -39,30 +39,43 @@
             <p>Any special flavour request is welcomed!</p>
             <p>Cash or E-Transfer Payment Only</p>
             <p>Minimum of $15 purchase required</p>
-
         </div>
         <div class="form">
-            <form action="action_page.php">
-          
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Message.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
-            </form>
-          </div>
+            <form id="emailForm">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
         
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Message.." style="height:200px"></textarea>
+        
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+        
+        </div>
     </section>
     <footer>
         <div class="footer-content">
-            <p>©All Rights Reserved. Anjani Sharma</p>
+            <p>© All Rights Reserved. Anjani Sharma</p>
         </div>
-    </footer>    
+    </footer>
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            var firstName = document.getElementById('fname').value;
+            var lastName = document.getElementById('lname').value;
+            var subject = document.getElementById('subject').value;
+            var email = 'testastastytreats23@outlook.com'; 
+
+            var mailtoLink = 'mailto:' + email +
+                '?subject=' + encodeURIComponent('Regarding Tasty Treats') +
+                '&body=' + encodeURIComponent('First Name: ' + firstName + '\n' +
+                    'Last Name: ' + lastName + '\n\n' +
+                    'Message: ' + subject);
+            window.location.href = mailtoLink;
+        });
+    </script>
 </body>
 </html>
